@@ -1,7 +1,7 @@
 title: My Portfolio
 description: QA Automation Consultant - Remote Work Journey
-baseurl: ""
-url: "http://127.0.0.1:4000"
+baseurl: "/myWebPortfolio"
+url: "https://type812.github.io"
 theme: minima
 markdown: kramdown
 

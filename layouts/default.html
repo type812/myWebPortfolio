@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | Ankit Srivastava</title>
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a> |
-      <a href="{{ '/about.html' | relative_url }}">About</a> |
-      <a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a> |
-      <a href="{{ '/videos.html' | relative_url }}">Videos</a> |
-      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Ankit Srivastava home">AS<span>.</span></a>
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
+      </div>
+      <a class="nav-contact" href="{{ '/contact.html' | relative_url }}">Let's talk <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -22,8 +27,9 @@
     {{ content }}
   </main>
 
-  <footer>
-    <p>&copy; 2025 My Portfolio</p>
+  <footer class="site-footer">
+    <p>© {{ site.time | date: "%Y" }} Ankit Srivastava</p>
+    <p>Thoughtful testing. Better software.</p>
   </footer>
 </body>
 </html>
